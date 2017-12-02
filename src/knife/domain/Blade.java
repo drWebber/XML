@@ -3,8 +3,8 @@ package knife.domain;
 public class Blade {
     private int widht;
     private int length;
-    BladeMaterial material;
-    boolean fuller;
+    private BladeMaterial material;
+    private boolean fuller;
     
     public Blade() { }
     
@@ -39,5 +39,10 @@ public class Blade {
     }
     public void setFuller(boolean fuller) {
         this.fuller = fuller;
+    }
+
+    @Override
+    public String toString() {
+        return "Blade [widht=" + widht + ", length=" + length + ", material=" + material + ", fuller=" + fuller + "]";
     }
 }

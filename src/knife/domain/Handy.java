@@ -1,5 +1,5 @@
 package knife.domain;
 
 public enum Handy {
-    oneHanded, twoHanded
+    ONE_HANDED, TWO_HANDED
 }

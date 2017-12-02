@@ -57,4 +57,10 @@ public class Knife {
     public void setValue(boolean value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return "Knife [id=" + id + ", type=" + type + ", handy=" + handy + ", origin=" + origin + ", visual=" + visual
+                + ", value=" + value + "]";
+    }
 }

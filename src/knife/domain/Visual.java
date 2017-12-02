@@ -26,4 +26,9 @@ public class Visual {
     public void setHandle(Handle handle) {
         this.handle = handle;
     }
+
+    @Override
+    public String toString() {
+        return "Visual [blade=" + blade + ", handle=" + handle + "]";
+    }
 }
