@@ -1,5 +1,5 @@
 package knife.domain;
 
 public enum BladeMaterial {
-    steel, castiron, copper, bronze
+    STEEL, CASTIRON, COPPER, BRONZE
 }

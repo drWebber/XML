@@ -5,7 +5,7 @@ public class Knife {
     private String type;
     private Handy handy;
     private String origin;
-    private Visual visual;
+    private Visual visual = new Visual();
     private boolean value;
     
     public Knife() { }
@@ -56,5 +56,11 @@ public class Knife {
 
     public void setValue(boolean value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "Knife [id=" + id + ", type=" + type + ", handy=" + handy + ", origin=" + origin + ", visual=" + visual
+                + ", value=" + value + "]";
     }
 }

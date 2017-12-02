@@ -21,4 +21,9 @@ public class Handle {
     public void setType(String type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Handle [material=" + material + ", type=" + type + "]";
+    }
 }

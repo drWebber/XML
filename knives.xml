@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knives xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://www.sitename.com/knives" xsi:schemaLocation="https://www.sitename.com/knives.xsd">
+    <knife id="12345">
+        <type>Knife</type>
+        <handy>ONE_HANDED</handy>
+        <origin>Belarus</origin>
+        <visual>
+            <blade>
+                <length>215</length>
+                <width>15</width>
+                <blade_material>STEEL</blade_material>
+                <fuller>true</fuller>
+            </blade>
+            <handle>
+                <handle_material>WOOD</handle_material>
+                <material_type>oak</material_type>
+            </handle>
+        </visual>
+        <value>false</value>
+    </knife>
+    <knife id="23456">
+        <type>Sabre</type>
+        <handy>ONE_HANDED</handy>
+        <origin>Russia</origin>
+        <visual>
+            <blade>
+                <length>500</length>
+                <width>20</width>
+                <blade_material>STEEL</blade_material>
+                <fuller>false</fuller>
+            </blade>
+            <handle>
+                <handle_material>METAL</handle_material>
+            </handle>
+        </visual>
+        <value>true</value>
+    </knife>
+    <knife id="34567">
+        <type>Dagger</type>
+        <handy>ONE_HANDED</handy>
+        <origin>Belarus</origin>
+        <visual>
+            <blade>
+                <length>300</length>
+                <width>10</width>
+                <blade_material>COPPER</blade_material>
+                <fuller>true</fuller>
+            </blade>
+            <handle>
+                <handle_material>WOOD</handle_material>
+                <material_type>maple</material_type>
+            </handle>
+        </visual>
+        <value>true</value>
+    </knife>
+    <knife id="45678">
+        <type>Sword</type>
+        <handy>TWO_HANDED</handy>
+        <origin>Lithuania</origin>
+        <visual>
+            <blade>
+                <length>600</length>
+                <width>40</width>
+                <blade_material>STEEL</blade_material>
+                <fuller>false</fuller>
+            </blade>
+            <handle>
+                <handle_material>METAL</handle_material>
+            </handle>
+        </visual>
+        <value>true</value>
+    </knife>
+    <knife id="56789">
+        <type>Knife</type>
+        <handy>ONE_HANDED</handy>
+        <origin>Poland</origin>
+        <visual>
+            <blade>
+                <length>25</length>
+                <width>15</width>
+                <blade_material>BRONZE</blade_material>
+                <fuller>false</fuller>
+            </blade>
+            <handle>
+                <handle_material>PLASTIC</handle_material>
+            </handle>
+        </visual>
+        <value>false</value>
+    </knife>
+</knives>

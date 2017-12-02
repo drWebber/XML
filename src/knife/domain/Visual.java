@@ -1,8 +1,8 @@
 package knife.domain;
 
 public class Visual {
-    private Blade blade;
-    private Handle handle;
+    private Blade blade = new Blade();
+    private Handle handle = new Handle();
 
     public Visual() { }
     
@@ -25,5 +25,10 @@ public class Visual {
 
     public void setHandle(Handle handle) {
         this.handle = handle;
+    }
+
+    @Override
+    public String toString() {
+        return "Visual [blade=" + blade + ", handle=" + handle + "]";
     }
 }
