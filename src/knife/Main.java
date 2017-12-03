@@ -1,12 +1,10 @@
 package knife;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import javax.xml.stream.XMLStreamException;
-
 import org.xml.sax.SAXException;
-
+import knife.comparator.OriginComparator;
 import knife.domain.Knife;
 import knife.xml.KnifeXmlReader;
 import knife.xml.KnifeXmlValidator;
@@ -20,18 +18,16 @@ public class Main {
         try {
             if (validator.idXmlValid()) {
                 KnifeXmlReader reader = new KnifeXmlReader(XML_PATH);
-                try {
                     List<Knife> knives = reader.read();
+                    knives.sort(new OriginComparator());
+                    System.out.println("The knives (order by origin country):");
                     for (Knife knife : knives) {
                         System.out.println(knife);
-                    }
-                } catch (FileNotFoundException | XMLStreamException e) {
-                    System.out.println(e.getMessage());
-                }                
+                    }               
             } else {
                 System.out.println(validator.getError());                
             }
-        } catch (SAXException | IOException e1) {
+        } catch (SAXException | IOException | XMLStreamException e1) {
             System.out.println(e1.getLocalizedMessage());
         }
     }
