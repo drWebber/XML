@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<knives xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="https://www.sitename.com/knives" xsi:schemaLocation="https://www.sitename.com/knives.xsd">
+<knives xmlns="https://www.sitename.com/knives" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.sitename.com/vauchers knives.xsd">
     <knife id="12345">
         <type>Knife</type>
         <handy>ONE_HANDED</handy>

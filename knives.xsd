@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.sitename.com/knives"
+	xmlns:tns="https://www.sitename.com/knives" elementFormDefault="qualified">
+	<element name="knives">
+		<complexType>
+			<sequence>
+				<element name="knife" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="type">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="[A-z]\w+" />
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="handy">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="ONE_HANDED" />
+										<enumeration value="TWO_HANDED" />
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="origin">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="[A-z]+" />
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="visual">
+								<complexType>
+									<all>
+										<element name="blade">
+											<complexType>
+												<sequence>
+													<element name="length">
+														<simpleType>
+															<restriction base="integer">
+																<minInclusive value="10"/>
+																<maxInclusive value="1500"/>
+															</restriction>
+														</simpleType>
+													</element>
+													<element name="width">
+														<simpleType>
+															<restriction base="integer">
+																<minInclusive value="10"/>
+																<maxInclusive value="150"/>
+															</restriction>
+														</simpleType>
+													</element>
+													<element name="blade_material">
+														<simpleType>
+															<restriction base="string">
+																<enumeration value="STEEL" />
+																<enumeration value="CASTIRON" />
+																<enumeration value="COPPER" />
+																<enumeration value="BRONZE" />
+															</restriction>
+														</simpleType>
+													</element>
+													<element name="fuller" type="boolean" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="handle">
+											<complexType>
+												<sequence>
+													<element name="handle_material">
+														<simpleType>
+															<restriction base="string">
+																<enumeration value="WOOD" />
+																<enumeration value="PLASTIC" />
+																<enumeration value="METAL" />
+															</restriction>
+														</simpleType>
+													</element>
+													<element name="material_type" minOccurs="0">
+														<simpleType>
+															<restriction base="string">
+																<pattern value="[A-z]+" />
+															</restriction>
+														</simpleType>
+													</element>
+												</sequence>
+											</complexType>
+										</element>
+									</all>
+								</complexType>
+							</element>
+							<element name="value" type="boolean" />
+						</sequence>
+						<attribute name="id" type="integer" use="required"/>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
