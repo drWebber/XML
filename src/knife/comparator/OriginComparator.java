@@ -6,7 +6,7 @@ import knife.domain.Knife;
 
 public class OriginComparator implements Comparator<Knife> {
     @Override
-    public int compare(Knife k1, Knife k2) {
+    public final int compare(final Knife k1, final Knife k2) {
         return k1.getOrigin().compareTo(k2.getOrigin());
     }
 }

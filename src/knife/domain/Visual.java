@@ -6,7 +6,7 @@ public class Visual {
 
     public Visual() { }
     
-    public Visual(Blade blade, Handle handle) {
+    public Visual(final Blade blade, final Handle handle) {
         this.blade = blade;
         this.handle = handle;
     }
@@ -15,7 +15,7 @@ public class Visual {
         return blade;
     }
 
-    public void setBlade(Blade blade) {
+    public void setBlade(final Blade blade) {
         this.blade = blade;
     }
 
@@ -23,12 +23,12 @@ public class Visual {
         return handle;
     }
 
-    public void setHandle(Handle handle) {
+    public void setHandle(final Handle handle) {
         this.handle = handle;
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return "Visual [blade=" + blade + ", handle=" + handle + "]";
     }
 }

@@ -7,14 +7,14 @@ public class Knife {
     private String origin;
     private Visual visual = new Visual();
     private boolean value;
-    
+
     public Knife() { }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(final int id) {
         this.id = id;
     }
 
@@ -22,7 +22,7 @@ public class Knife {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
@@ -30,7 +30,7 @@ public class Knife {
         return handy;
     }
 
-    public void setHandy(Handy handy) {
+    public void setHandy(final Handy handy) {
         this.handy = handy;
     }
 
@@ -38,7 +38,7 @@ public class Knife {
         return origin;
     }
 
-    public void setOrigin(String origin) {
+    public void setOrigin(final String origin) {
         this.origin = origin;
     }
 
@@ -46,7 +46,7 @@ public class Knife {
         return visual;
     }
 
-    public void setVisual(Visual visual) {
+    public void setVisual(final Visual visual) {
         this.visual = visual;
     }
 
@@ -54,13 +54,14 @@ public class Knife {
         return value;
     }
 
-    public void setValue(boolean value) {
+    public void setValue(final boolean value) {
         this.value = value;
     }
 
     @Override
-    public String toString() {
-        return "Knife [id=" + id + ", type=" + type + ", handy=" + handy + ", origin=" + origin + ", visual=" + visual
+    public final String toString() {
+        return "Knife [id=" + id + ", type=" + type + ", handy=" + handy + ", "
+                + "origin=" + origin + ", visual=" + visual
                 + ", value=" + value + "]";
     }
 }

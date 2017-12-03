@@ -14,7 +14,8 @@ public class Main {
     private static final String SCHEMA_PATH = "knives.xsd";
 
     public static void main(String[] args) {
-        KnifeXmlValidator validator = new KnifeXmlValidator(XML_PATH, SCHEMA_PATH);
+        KnifeXmlValidator validator = new KnifeXmlValidator(XML_PATH,
+                SCHEMA_PATH);
         try {
             if (validator.idXmlValid()) {
                 KnifeXmlReader reader = new KnifeXmlReader(XML_PATH);
@@ -23,9 +24,9 @@ public class Main {
                     System.out.println("The knives (order by origin country):");
                     for (Knife knife : knives) {
                         System.out.println(knife);
-                    }               
+                    }
             } else {
-                System.out.println(validator.getError());                
+                System.out.println(validator.getError());
             }
         } catch (SAXException | IOException | XMLStreamException e1) {
             System.out.println(e1.getLocalizedMessage());
