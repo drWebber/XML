@@ -1,7 +1,7 @@
 package knife.domain;
 
 public class Knife {
-    private int id;
+    private String id;
     private String type;
     private Handy handy;
     private String origin;
@@ -10,11 +10,11 @@ public class Knife {
 
     public Knife() { }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(final int id) {
+    public void setId(final String id) {
         this.id = id;
     }
 

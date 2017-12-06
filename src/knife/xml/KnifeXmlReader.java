@@ -43,8 +43,8 @@ public class KnifeXmlReader {
                 String tag = reader.getLocalName();
                 if ("knife".equals(tag)) {
                     knife = new Knife();
-                    knife.setId(Integer.parseInt(reader.getAttributeValue(null,
-                            "id")));
+                    knife.setId(reader.getAttributeValue(null,
+                            "id"));
                 } else if ("type".equals(tag)) {
                     knife.setType(reader.getElementText());
                 } else if ("handy".equals(tag)) {

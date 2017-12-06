@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <knives xmlns="https://www.sitename.com/knives" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://www.sitename.com/vauchers knives.xsd">
-    <knife id="12345">
+    <knife id="k12345">
         <type>Knife</type>
         <handy>ONE_HANDED</handy>
         <origin>Belarus</origin>
@@ -19,7 +19,7 @@
         </visual>
         <value>false</value>
     </knife>
-    <knife id="23456">
+    <knife id="k23456">
         <type>Sabre</type>
         <handy>ONE_HANDED</handy>
         <origin>Russia</origin>
@@ -36,7 +36,7 @@
         </visual>
         <value>true</value>
     </knife>
-    <knife id="34567">
+    <knife id="k34567">
         <type>Dagger</type>
         <handy>ONE_HANDED</handy>
         <origin>Belarus</origin>
@@ -54,7 +54,7 @@
         </visual>
         <value>true</value>
     </knife>
-    <knife id="45678">
+    <knife id="k45678">
         <type>Sword</type>
         <handy>TWO_HANDED</handy>
         <origin>Lithuania</origin>
@@ -71,7 +71,7 @@
         </visual>
         <value>true</value>
     </knife>
-    <knife id="56789">
+    <knife id="k56789">
         <type>Knife</type>
         <handy>ONE_HANDED</handy>
         <origin>Poland</origin>

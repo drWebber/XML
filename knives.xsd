@@ -92,7 +92,7 @@
                             </element>
                             <element name="value" type="boolean" />
                         </sequence>
-                        <attribute name="id" type="integer" use="required"/>
+                        <attribute name="id" type="ID" use="required" />
                     </complexType>
                 </element>
             </sequence>
